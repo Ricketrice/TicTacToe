@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.scoreboard {
+    background: #222831;
+    border: 3px solid #00adb5; /* Add border style and width */
+    color: #eeeeee;
+    padding: 20px;             /* Add some padding */             /* Layout players side by side */
+    justify-content: space-around;
+    border-radius: 8px;        /* Optional: rounded corners */
+    width: 200px;
+}
+
+.playerOne .nameing h1,
+.playerTwo .nameing h1 {
+    color: #ffd369;            /* Title color (warm yellow) */
+    font-size: 1.5rem;
+}

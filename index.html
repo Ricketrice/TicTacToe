@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>TicTacToe</h1>
+    
+    <div class="mainBody">
+        <div class = "bodyOfTicTacToe">
+            <div id="0" class="box"></div>
+            <div id="1" class="box"></div>
+            <div id="2" class="box"></div>
+            <div id="3" class="box"></div>
+            <div id="4" class="box"></div>
+            <div id="5" class="box"></div>
+            <div id="6" class="box"></div>
+            <div id="7" class="box"></div>
+            <div id="8" class="box"></div>
+        </div>
+        <button type="button" onclick="reset()" id = "reset">Reset Game</button> 
+
+        <div class = "draw"></div>
+        <div class = "xWin"></div>
+        <div class = "yWin"></div>
+
+        <div class="MainForm" id = "mainForm">
+            <form>
+                <h1 class="formH1">Let’s Get Started — Enter Player Names</h1>
+                <label for="name1">Player one name:</label><br>
+                <input type="text" id = "name1" name="Player_oneName" required><br>
+
+                <label for="name2">Player two name:</label><br>
+                <input type="text" id = "name2" name="Player_oneName" required><br>
+                <button  onclick="sendData()" id = "getName" type="button" class="nameButton">Start Game</button>
+            </form>
+        </div>
+        
+        <div class="scoreboard">
+            <div class="One">
+                <div class="playerOne">
+                    <div class="nameing1">
+                        <h1>Player one: </h1>
+                    </div>
+                </div>
+
+                <div class="Score">
+                    <div class="nameing">
+                        <h1>Score: </h1>
+                        <h1 id ="score1">0</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="playerTwo">
+                    <div class="nameing2">
+                        <h1>Player one: </h1>
+                    </div>
+                </div>
+
+                <div class="Score">
+                    <div class="nameing">
+                        <h1>Score: </h1>
+                        <h1 id ="score2">0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

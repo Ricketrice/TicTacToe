@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.mainBody {
+    display: grid;
+    grid-template-columns: 450px 700px 200px;
+}
+
+#reset {
+    grid-column: 3/4;
+    height: 70px;
+    width: 100px;   
+    left: 200px;
+}
+
+.bodyOfTicTacToe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    padding: 20px;
+    height: 600px;
+    align-content: flex-start;
+    gap: 10px;
+    justify-content: center;
+    align-self: center;
+    background-color: #1a1a2e;;
+    grid-column: 2/3;
+}
+
+.bodyOfTicTacToe div {
+    background-color: rgb(78, 78, 194); 
+    height: 175px;
+    width: 175px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 100px;
+    background-color: #16213e;
+}
+
+.box:hover {
+    background-color: #0f3460;
+}
+
+.MainForm {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    color: #333333;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: none;
+}
+
+.MainForm .formH1 {
+    text-align: center;
+    color: #2c3e50; 
+    
+}
+
+.MainForm form, .formH1{
+    background-color: #f9f9f9; /* Soft light input field */
+    color: #333333;
+    border: 1px solid #cccccc;
+    font-size: 67px;
+    ;
+}
+
+.MainForm form, input, label {
+    background-color: white;
+    color: black;
+}
+.MainForm > form > input {
+    width: 300px;
+    height: 50px;
+    font-size: 32px;
+}
+
+.nameButton {
+    border: none;
+    background-color: none;
+}
+
+.scoreboard {
+    background: #222831;
+    border: 3px solid #00adb5; /* Add border style and width */
+    color: #eeeeee;
+    padding: 20px;             /* Add some padding */             /* Layout players side by side */
+    justify-content: space-around;
+    border-radius: 8px;        /* Optional: rounded corners */
+    width: 300px;
+    display: none;
+}
+
+.playerOne .nameing1 h1,
+.playerTwo .nameing h1 {
+    color: #ffd369;            /* Title color (warm yellow) */
+    font-size: 1.5rem;
+}
+
+.nameing {
+    display: flex;
+    gap: 10px;
+}
+
+.nameing1,.nameing2 {
+    display: flex;
+    gap: 10px;
+}
+
+.two {
+    margin-top: 20px;
+}
+
+#reset {
+  background-color: #1e1e2f;      /* dark background */
+  color: #ffffff;                /* white text */
+  border: 2px solid #0fbcf9;     /* glowing blue border */
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+#reset:hover {
+  background-color: #0fbcf9;
+  color: #1e1e2f;
+  transform: scale(1.05);
+}
+
+.draw, .yWin, .xWin{
+    display: none;
+}
